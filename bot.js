@@ -2,13 +2,6 @@ const Discord = require("discord.js"); //baixar a lib
 const client = new Discord.Client();
 const config = require("./config.json");
 
-const host = '0.0.0.0';
-const port = process.env.PORT || 3000;
-app.listen(port, host, function() {
-  console.log("Server started.......");
-});
-
-
 client.on("ready", () => {
     console.log(`Bot foi iniciado, com ${client.users.size} usuários, em ${client.channels.size} canais, em ${client.guilds.size} servidores.`);
     client.user.setActivity(`Eu estou em ${client.guilds.size} servidores`);
@@ -119,4 +112,4 @@ client.on("message", async message => {
 
 });
 
-client.login(config.token);
+client.login(process.env.config.token);
