@@ -1,0 +1,17 @@
+{
+  "name": "BOTKINGS",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cleverbot": "^1.0.1",
+    "cleverbot-node": "^0.3.11",
+    "discord.js": "^11.4.2"
+  }
+}
