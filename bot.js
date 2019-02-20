@@ -108,7 +108,7 @@ client.on("message", async message => {
             .setImage("https://cdn.discordapp.com/attachments/547512622174568450/547844286360584199/9615003_l-1024x689.png")
             .setURL("https://discord.gg/7ZkyFsf")
         message.guild.members.map(membro => { membro.send({ embed }) });
-        message.channel.send("Divulgação enviada");
+        message.channel.send("Divulgação enviada").catch(error => console.log(error));
     }
 
 });
